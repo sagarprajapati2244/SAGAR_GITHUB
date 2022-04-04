@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:weightSum="4">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:id="@+id/imgview"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:elevation="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/card_bg">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="26dp"
+            android:text="LOGIN"
+            android:fontFamily="@font/seg_ui_semibold"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="48dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+            <EditText
+                android:textColorHint="@color/colorPlaceholder"
+                android:drawableEnd="@drawable/user_icon"
+                android:drawableTint="@color/colorTextBlack"
+                android:hint="someone@gmail.com"
+                android:textColor="@color/colorTextBlack"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:background="@drawable/edittextbg"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:id="@+id/edt_login_email"/>
+            <EditText
+                android:textColorHint="@color/colorPlaceholder"
+                android:layout_marginTop="24dp"
+                android:drawableEnd="@drawable/lock_icon"
+                android:drawableTint="@color/colorTextBlack"
+                android:hint="Password"
+                android:textColor="@color/colorTextBlack"
+                android:paddingLeft="26dp"
+                android:paddingRight="26dp"
+                android:inputType="textPassword"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:background="@drawable/edittextbg"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp"
+                android:id="@+id/edt_login_password"/>
+
+            <CheckBox
+                android:buttonTint="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="Remember me"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="18dp"
+                    android:text="Need Help?"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:layout_marginLeft="12dp"
+                    android:layout_weight="1" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_weight="1"
+                    android:text="Sign In"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/seg_ui_semibold"
+                    android:background="@drawable/btnbg"
+                    android:id="@+id/btn_login"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="26dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18dp"
+                android:text="Don't have an account?"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:layout_marginLeft="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:text="Register instead"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:layout_marginLeft="12dp"
+                android:id="@+id/tv_register"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
